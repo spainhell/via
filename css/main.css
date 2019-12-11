@@ -1,0 +1,157 @@
+@font-face {
+font-family: 'Gotham';
+src: url('./font/Gotham-Medium.otf');
+font-weight: normal;
+font-style: normal;
+}
+* {
+font-family: 'Gotham'; font-size: 14px;
+}
+body {
+	padding: 0; margin: 0;
+}
+.allOver, .topDiv, .topLink, .teamOver, .bottomDiv {
+	width: 100%; max-width: 1200px; margin: 0px auto;
+}
+.navigation, .workDiv, .teamDiv, .contactDiv {
+	width: 100%; max-width: 900px; margin: 0px auto;
+}
+.logo {
+	float: left;
+}
+.menu {
+	float: right; padding-top: 40px; padding-bottom: 10px;
+}
+.menu a {
+	font-size: 14px; color: #a7a7a7; padding: 3px 20px; text-decoration: none;
+}
+.menu a:hover {
+	text-decoration: underline;
+}
+.topDiv {
+	background: url("./img/bgTop.jpg") no-repeat 0 0; min-height: 500px; clear: both;
+	text-align: center;
+}
+.topLink {
+	background-color: #f7f7f7; border-bottom: 1px solid #d9d9d9; min-height: 80px;
+}
+.topLink p {
+	width: 100%; text-align: center; font-variant: small-caps; font-size: 17px;
+	margin-top: 0px; padding-top: 30px;
+}
+.slogan {
+	font-size: 50px; font-weight: bold; font-variant: small-caps; display: block; padding-top: 150px;
+}
+.sloganUnder {
+	font-family: 'georgia'; font-style: italic; font-size: 14px;
+}
+.downButton {
+	display: block; margin: 30px auto; clear: both;
+}
+h2 {
+	font-size: 30px; text-decoration: underline; text-align: center; line-height: 40px;
+	font-variant: small-caps;
+}
+.centerP {
+	width: 100%; text-align: center;
+}
+.work-in {
+	float: left; width: 300px;
+}
+.work-in img {
+	vertical-align: center; margin: 5px 0 20px 0;
+}
+.clear {
+	clear: both; display: block; width: 100%;
+}
+.teamOver {
+	background-color: #f3f3f3; clear: both; padding: 20px 0 60px 0; border: 0px solid #d9d9d9; border-width: 1px 0px;
+}
+.team-in {
+	float: left; width: 225px;
+}
+.team-in img {
+	vertical-align: center; margin: 5px 0 20px 0;
+}
+.map {
+	width: 40%; float: left;
+}
+.map iframe {
+	border: 5px solid #fff; box-shadow: #dcdcdc 2px 4px 10px; 
+}
+.form {
+	width: 56%; float: left;
+}
+.form textarea {
+	background-color: #f2f2f2; border: 1px solid #d9d9d9; float: left;
+}
+.form .message {
+	width: 500px; height: 210px; padding: 10px;
+}
+.form .e-mail {
+	width: 250px; height: 40px; padding: 10px; margin-top: 15px;
+}
+.form .send {
+	background: none; border: 5px solid #fff; box-shadow: #dcdcdc 2px 4px 6px;
+	padding: 0; float: right; margin: 10px -15px 0 0;
+}
+.bottomDiv {
+	background-color: #4f4f4f; height: 50px; margin-top: 60px; padding-top: 30px;
+}
+.bottomDiv span {
+	color: #949494; padding: 0px 10px;
+}
+.address {
+	float: left;
+}
+.copyright {
+	float: right;
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+.logo {
+	max-width: 200px; margin-left: 20px;
+}
+.workDiv, .teamOver-in, .map, .form, .form .message {
+	width: 90%; padding-left: 5%;
+}
+.form .send {
+	float: left; clear: both;
+}
+.bottomDiv {
+	height: 90px; padding-top: 20px; text-align: center;
+}
+}
+
+@media (max-width: 400px) {
+.logo {
+	max-width: 150px; margin-left: 20px;
+}
+.menu {
+	float: right; padding: 10px 0 10px;
+}
+.slogan {
+	padding-top: 50px;
+}
+.centerP {
+	padding: 0 5%; width: 90%;
+}
+.work-in, .team-in {
+	width: 100%; text-align: center;
+}
+.map, .form {
+	width: 90%; padding-left: 5%;
+}
+.form .message, .form .e-mail {
+	width: 90%; padding-left: 5%;
+}
+.form .send {
+	float: left;
+}
+.bottomDiv {
+	height: 100%; padding-top: 20px; text-align: center;
+}
+.bottomDiv span, .bottomDiv .copyright {
+	display: block; padding: 10px 0px; width: 100%; text-align: center;
+}
+}

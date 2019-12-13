@@ -68,10 +68,14 @@ h2 {
 	background-color: #f3f3f3; clear: both; padding: 20px 0 60px 0; border: 0px solid #d9d9d9; border-width: 1px 0px;
 }
 .team-in {
-	float: left; width: 225px;
+	float: left; width: 19%; background-color: #fff; text-align: center;
+	padding: 2%; margin: 1%;
 }
-.team-in img {
-	vertical-align: center; margin: 5px 0 20px 0;
+.team-in .position {
+	font-style: italic; font-size: 0.8em;
+}
+.icons {
+	margin-top: 10px;
 }
 .map {
 	width: 40%; float: left;
@@ -123,6 +127,12 @@ h2 {
 }
 }
 
+@media (min-width: 400px) and (max-width: 700px) {
+.team-in {
+	width: 40%; padding: 2%; margin: 3%; max-width: 210px;
+}
+}
+
 @media (max-width: 400px) {
 .logo {
 	max-width: 150px; margin-left: 20px;
@@ -138,6 +148,9 @@ h2 {
 }
 .work-in, .team-in {
 	width: 100%; text-align: center;
+}
+.team-in {
+	width: 40%; padding: 2%; margin: 3%; max-width: 210px;
 }
 .map, .form {
 	width: 90%; padding-left: 5%;

@@ -10,6 +10,7 @@
     <meta name="robots" content="all,follow" />
     <meta name="author" content="SPA0138" />
 </head>
+
 <body>
 <div class="allOver">
     <div class="navigation">
@@ -92,9 +93,9 @@
         </div>
         <div class="form">
             <p>Pokud nás chcete kontaktovat, můžete využít tento formulář</p>
-            <textarea class="message" name="message">Vaše zpráva</textarea>
-            <textarea class="e-mail" name="e-mail">vas@email.cz</textarea>
-            <button class="send" name="send" value="send"><img src="./img/button.jpg"></button>
+            <input type="text" class="message" name="message" required>Vaše zpráva</input>
+            <input type="email" class="e-mail" name="e-mail" required>vas@email.cz</input>
+            <button type="submit" class="send" name="send" value="send"><img src="./img/button.jpg"></button>
         </div>
         <span class="clear"></span>
     </div>

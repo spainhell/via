@@ -1,11 +1,11 @@
 @font-face {
-font-family: 'Gotham';
-src: url('../font/Gotham-Medium.otf');
-font-weight: normal;
-font-style: normal;
+	font-family: 'Gotham';
+	src: url('../font/Gotham-Medium.otf');
+	font-weight: normal;
+	font-style: normal;
 }
 * {
-font-family: 'Gotham'; font-size: 14px;
+	font-family: 'Gotham'; font-size: 14px;
 }
 body {
 	padding: 0; margin: 0;
@@ -56,10 +56,20 @@ h2 {
 	width: 100%; text-align: center;
 }
 .work-in {
-	float: left; width: 300px;
+	float: left; width: 300px; padding-bottom: 20px;
 }
 .work-in img {
 	vertical-align: center; margin: 5px 0 20px 0;
+}
+.mudrA {
+	display: block; padding: 30px 0 50px; text-align: center; max-width: 260px;
+	background-color: #00fcff; text-decoration: none; color: #000;
+}
+.mudrA .name {
+	font-size: 1.6em; line-height: 3.0em;
+}
+.mudrA .title {
+	font-size: 1.2em; font-style: italic; line-height: 1.4em;
 }
 .clear {
 	clear: both; display: block; width: 100%;
@@ -81,7 +91,7 @@ h2 {
 	width: 40%; float: left;
 }
 .map iframe {
-	border: 5px solid #fff; box-shadow: #dcdcdc 2px 4px 10px; 
+	border: 5px solid #fff; box-shadow: #dcdcdc 2px 4px 10px;
 }
 .form {
 	width: 56%; float: left;
@@ -113,58 +123,58 @@ h2 {
 }
 
 @media (min-width: 400px) and (max-width: 900px) {
-.logo {
-	max-width: 200px; margin-left: 20px;
-}
-.workDiv, .teamOver-in, .map, .form, .form .message {
-	width: 90%; padding-left: 5%;
-}
-.form .send {
-	float: left; clear: both;
-}
-.bottomDiv {
-	height: 90px; padding-top: 20px; text-align: center;
-}
+	.logo {
+		max-width: 200px; margin-left: 20px;
+	}
+	.workDiv, .teamOver-in, .map, .form, .form .message {
+		width: 90%; padding-left: 5%;
+	}
+	.form .send {
+		float: left; clear: both;
+	}
+	.bottomDiv {
+		height: 90px; padding-top: 20px; text-align: center;
+	}
 }
 
 @media (min-width: 400px) and (max-width: 700px) {
-.team-in {
-	width: 40%; padding: 2%; margin: 3%; max-width: 210px;
-}
+	.team-in {
+		width: 40%; padding: 2%; margin: 3%; max-width: 210px;
+	}
 }
 
 @media (max-width: 400px) {
-.logo {
-	max-width: 150px; margin-left: 20px;
-}
-.menu {
-	float: right; padding: 10px 0 10px;
-}
-.slogan {
-	padding-top: 50px;
-}
-.centerP {
-	padding: 0 5%; width: 90%;
-}
-.work-in, .team-in {
-	width: 100%; text-align: center;
-}
-.team-in {
-	width: 40%; padding: 2%; margin: 3%; max-width: 210px;
-}
-.map, .form {
-	width: 90%; padding-left: 5%;
-}
-.form .message, .form .e-mail {
-	width: 90%; padding-left: 5%;
-}
-.form .send {
-	float: left;
-}
-.bottomDiv {
-	height: 100%; padding-top: 20px; text-align: center;
-}
-.bottomDiv span, .bottomDiv .copyright {
-	display: block; padding: 10px 0px; width: 100%; text-align: center;
-}
+	.logo {
+		max-width: 150px; margin-left: 20px;
+	}
+	.menu {
+		float: right; padding: 10px 0 10px;
+	}
+	.slogan {
+		padding-top: 50px;
+	}
+	.centerP {
+		padding: 0 5%; width: 90%;
+	}
+	.work-in, .team-in {
+		width: 100%; text-align: center;
+	}
+	.team-in {
+		width: 40%; padding: 2%; margin: 3%; max-width: 210px;
+	}
+	.map, .form {
+		width: 90%; padding-left: 5%;
+	}
+	.form .message, .form .e-mail {
+		width: 90%; padding-left: 5%;
+	}
+	.form .send {
+		float: left;
+	}
+	.bottomDiv {
+		height: 100%; padding-top: 20px; text-align: center;
+	}
+	.bottomDiv span, .bottomDiv .copyright {
+		display: block; padding: 10px 0px; width: 100%; text-align: center;
+	}
 }

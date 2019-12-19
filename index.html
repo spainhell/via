@@ -10,13 +10,13 @@
     <meta name="keywords" content="lékaři lékařské středisko lhota čertovy skály"/>
     <meta name="robots" content="all,follow" />
     <meta name="author" content="SPA0138" />
-    <script src="scripts/weather.js"></script>>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/yearend.js"></script>
 </head>
+<body onload="getFromYrNo(); getTimeToYearEnd(); ">
+<div id="weather"></div>
+<div id="yearend"></div>
 
-<body onload="getFromYrNo()">
-<div id="weather">
-
-</div>
 <div class="allOver">
     <div class="navigation">
         <a href="#" class="logo"><img src="img/logo.jpg" alt="logo"></a>
@@ -41,32 +41,41 @@
         <h2>ORDINACE</h2>
         <p class="centerP">V lékařském středisku ve Lhotě u Čertovy skály sídlí:</p>
         <div class="work-in">
-            <a href="mudr_nemocna.html"><img src="./img/erika_namocna.png" alt=""></a>
+            <a class="mudrA" href="mudr_lecivy.html">
+                <span class="name">MUDr. Aleš Léčivý</span><br>
+                <span class="title">praktický lékař</span><br>
+            </a>
         </div>
         <div class="work-in">
-            <img src="./img/ales_lecivy.png" alt="">
+            <a class="mudrA" href="mudr_nemocna.html">
+                <span class="name">MUDr. Erika Nemocná</span><br>
+                <span class="title">praktická lékařka</span><br>
+            </a>
         </div>
         <div class="work-in">
-            <img src="./img/leopold_strasny.png" alt="">
+            <a class="mudrA" href="mudr_strasny.html">
+                <span class="name">MUDr. Leopold Strašný</span><br>
+                <span class="title">praktický lékař</span><br>
+            </a>
         </div>
         <div class="work-in">
-            <img src="./img/eva_ditetova.png" alt="">
+            <a class="mudrB" href="mudr_ditetova.html">
+                <span class="name">MUDr. Eva Dítětová</span><br>
+                <span class="title">dětská lékařka</span><br>
+            </a>
         </div>
         <div class="work-in">
-            <img src="./img/vaclav_zubaty.png" alt="">
+            <a class="mudrC" href="mudr_zubaty.html">
+                <span class="name">MUDr. Václav Zubatý</span><br>
+                <span class="title">stomatolog</span><br>
+            </a>
         </div>
         <div class="work-in">
-            <img src="./img/dr_cert.png" alt="">
+            <a class="mudrD" href="dr_fax.html">
+                <span class="name">Dr. FAX</span><br>
+                <span class="title">lékárna</span><br>
+            </a>
         </div>
-<!--        <div class="work-in">-->
-<!--            <img src="./img/work07.jpg" alt="">-->
-<!--        </div>-->
-<!--        <div class="work-in">-->
-<!--            <img src="./img/work08.jpg" alt="">-->
-<!--        </div>-->
-<!--        <div class="work-in">-->
-<!--            <img src="./img/work09.jpg" alt="">-->
-<!--        </div>-->
         <span class="clear"></span>
     </div>
 
@@ -127,9 +136,7 @@
             <p>Pokud nás chcete kontaktovat, můžete využít tento formulář</p>
             <textarea class="message" name="message">Vaše zpráva</textarea>
             <textarea class="e-mail" name="e-mail">vas@email.cz</textarea>
-            <button class="send" name="send" value="send">
-                <img src="./img/button.jpg">
-            </button>
+            <button class="send" name="send" value="send"><img src="./img/button.jpg"></button>
         </div>
         <span class="clear"></span>
     </div>
@@ -143,6 +150,7 @@
         </div>
         <span class="clear"></span>
     </div>
+
 </div><!-- konec allOver -->
 </body>
 </html>

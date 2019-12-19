@@ -30,11 +30,11 @@
         <a class="downButton" href="#contact"><img src="./img/downButton.png"/></a>
     </div>
     <div class="topLink">
-        <span>Nabíráme nové pacienty do ordinace, akce trvá do:</span>
+        <span>Do 31.12.2019 přijímáme nové pacienty. Na registraci máte ještě:</span>
         <p id="yearend"></p>
     </div>
     <div class="topLink">
-        <p>V lékařském středisku ve Lhotě u Čertovy skály ordinují 3 praktičtí lékaři, pediatr, chirurg a 2 zubní
+        <p>V lékařském středisku ordinují 3 praktičtí lékaři, pediatr, chirurg a 2 zubní
             lékaři.<br>
             Najdete zde také odběrné místo laboratoře a lékárnu.</p>
     </div>
@@ -44,10 +44,10 @@
         <h2>ORDINACE</h2>
         <p class="centerP">V lékařském středisku ve Lhotě u Čertovy skály sídlí:</p>
         <div class="work-in">
-            <a class="mudrA" href="mudr_lecivy.html">
+            <p class="mudrA">
                 <span class="name">MUDr. Aleš Léčivý</span><br>
                 <span class="title">praktický lékař</span><br>
-            </a>
+            </p>
         </div>
         <div class="work-in">
             <a class="mudrA" href="mudr_nemocna.html">
@@ -56,20 +56,20 @@
             </a>
         </div>
         <div class="work-in">
-            <a class="mudrA" href="mudr_strasny.html">
-                <span class="name">MUDr. Leopold Strašný</span><br>
+            <p class="mudrA">
+                <span class="name">MUDr. Leoš Strašný</span><br>
                 <span class="title">praktický lékař</span><br>
-            </a>
+            </p>
         </div>
         <div class="work-in">
-            <a class="mudrB" href="mudr_ditetova.html">
+            <p class="mudrB">
                 <span class="name">MUDr. Eva Dítětová</span><br>
                 <span class="title">dětská lékařka</span><br>
-            </a>
+            </p>
         </div>
         <div class="work-in">
             <a class="mudrC" href="mudr_zubaty.html">
-                <span class="name">MUDr. Václav Zubatý</span><br>
+                <span class="name">MDDr. Václav Zubatý</span><br>
                 <span class="title">stomatolog</span><br>
             </a>
         </div>
@@ -183,26 +183,13 @@
     </div>
 
 </div><!-- konec allOver -->
-<script src="scripts/weather.js"></script>
-<script src="scripts/yearend.js"></script>
+
+<script type="text/javascript" src="scripts/weather.js"></script>
+<script type="text/javascript" src="scripts/yearend.js"></script>
+<script type="text/javascript" src="scripts/form.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-            event.preventDefault();
-            $(this).ekkoLightbox();
-        });
-        $("#form").on("submit", function (e) {
-            e.preventDefault();
-            let message = "";
-            $(this).serializeArray().forEach(function (data) {
-                message += data.name + ": " + data.value + "\n";
-            });
-            alert("Formulář jsme odeslali s těmito daty:\n\n" + message);
-        });
-    });
-</script>
+
 </body>
 </html>

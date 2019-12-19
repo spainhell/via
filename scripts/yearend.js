@@ -15,7 +15,7 @@ function getTimeToYearEnd() {
 
     var seconds = Math.floor(delta);
 
-    document.getElementById("yearend").innerHTML = days + " dní " + hours + " hodin " + minutes + " minut " + seconds + " vteřin";
+    $("#yearend").html(days + " dní " + hours + " hodin " + minutes + " minut " + seconds + " vteřin");
 }
 
 setInterval(getTimeToYearEnd, 1000);

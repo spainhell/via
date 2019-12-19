@@ -1,180 +1,430 @@
 @font-face {
-	font-family: 'Gotham';
-	src: url('../font/Gotham-Medium.otf');
-	font-weight: normal;
-	font-style: normal;
-}
-* {
-	font-family: 'Gotham'; font-size: 14px;
-}
-body {
-	padding: 0; margin: 0;
-}
-.allOver, .topDiv, .topLink, .teamOver, .bottomDiv {
-	width: 100%; max-width: 1200px; margin: 0px auto;
-}
-.navigation, .workDiv, .teamDiv, .contactDiv {
-	width: 100%; max-width: 900px; margin: 0px auto;
-}
-.logo {
-	float: left;
-}
-.menu {
-	float: right; padding-top: 40px; padding-bottom: 10px;
-}
-.menu a {
-	font-size: 14px; color: #a7a7a7; padding: 3px 20px; text-decoration: none;
-}
-.menu a:hover {
-	text-decoration: underline;
-}
-.topDiv {
-	background: url("../img/bgTop.jpg") no-repeat 0 0; min-height: 500px; clear: both;
-	text-align: center;
-}
-.topLink {
-	background-color: #f7f7f7; border-bottom: 1px solid #d9d9d9; min-height: 80px;
-}
-.topLink p {
-	width: 100%; text-align: center; font-variant: small-caps; font-size: 17px;
-	margin-top: 0px; padding-top: 30px;
-}
-.slogan {
-	font-size: 50px; font-weight: bold; font-variant: small-caps; display: block; padding-top: 150px;
-}
-.sloganUnder {
-	font-family: 'georgia'; font-style: italic; font-size: 14px;
-}
-.downButton {
-	display: block; margin: 30px auto; clear: both;
-}
-h2 {
-	font-size: 30px; text-decoration: underline; text-align: center; line-height: 40px;
-	font-variant: small-caps;
-}
-.centerP {
-	width: 100%; text-align: center;
-}
-.work-in {
-	float: left; width: 300px; padding-bottom: 20px;
-}
-.work-in img {
-	vertical-align: center; margin: 5px 0 20px 0;
-}
-.mudrA {
-	display: block; padding: 30px 0 50px; text-align: center; max-width: 260px;
-	background-color: #00fcff; text-decoration: none; color: #000;
-}
-.mudrA .name {
-	font-size: 1.6em; line-height: 3.0em;
-}
-.mudrA .title {
-	font-size: 1.2em; font-style: italic; line-height: 1.4em;
-}
-.clear {
-	clear: both; display: block; width: 100%;
-}
-.teamOver {
-	background-color: #f3f3f3; clear: both; padding: 20px 0 60px 0; border: 0px solid #d9d9d9; border-width: 1px 0px;
-}
-.team-in {
-	float: left; width: 19%; background-color: #fff; text-align: center;
-	padding: 2%; margin: 1%;
-}
-.team-in .position {
-	font-style: italic; font-size: 0.8em;
-}
-.icons {
-	margin-top: 10px;
-}
-.map {
-	width: 40%; float: left;
-}
-.map iframe {
-	border: 5px solid #fff; box-shadow: #dcdcdc 2px 4px 10px;
-}
-.form {
-	width: 56%; float: left;
-}
-.form textarea {
-	background-color: #f2f2f2; border: 1px solid #d9d9d9; float: left;
-}
-.form .message {
-	width: 500px; height: 210px; padding: 10px;
-}
-.form .e-mail {
-	width: 250px; height: 40px; padding: 10px; margin-top: 15px;
-}
-.form .send {
-	background: none; border: 5px solid #fff; box-shadow: #dcdcdc 2px 4px 6px;
-	padding: 0; float: right; margin: 10px -15px 0 0;
-}
-.bottomDiv {
-	background-color: #4f4f4f; height: 50px; margin-top: 60px; padding-top: 30px;
-}
-.bottomDiv span {
-	color: #949494; padding: 0px 10px;
-}
-.address {
-	float: left;
-}
-.copyright {
-	float: right;
+    font-family: 'Gotham';
+    src: url('../font/Gotham-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
+* {
+    font-family: 'Gotham';
+    font-size: 14px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.allOver, .topDiv, .topLink, .teamOver, .bottomDiv {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.navigation, .workDiv, .teamDiv, .contactDiv {
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.logo {
+    float: left;
+}
+
+.menu {
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.menu a {
+    font-size: 14px;
+    color: #a7a7a7;
+    padding: 3px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.topDiv {
+    background: url("../img/bgTop.jpg") no-repeat 0 0;
+    min-height: 500px;
+    clear: both;
+    text-align: center;
+}
+
+.topLink {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d9d9d9;
+    min-height: 80px;
+    text-align: center;
+}
+
+.topLink p {
+    width: 100%;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 17px;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+
+.topLink span {
+    width: 100%;
+    font-size: 25px;
+}
+
+.slogan {
+    font-size: 50px;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: block;
+    padding-top: 150px;
+}
+
+.sloganUnder {
+    font-family: 'georgia';
+    font-style: italic;
+    font-size: 14px;
+}
+
+.downButton {
+    display: block;
+    margin: 30px auto;
+    clear: both;
+}
+
+h2 {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 40px;
+    font-variant: small-caps;
+}
+
+.centerP {
+    width: 100%;
+    text-align: center;
+}
+
+.work-in {
+    float: left;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.work-in img {
+    vertical-align: center;
+    margin: 5px 0 20px 0;
+}
+
+.mudrA {
+    display: block;
+    padding: 30px 0 50px;
+    text-align: center;
+    max-width: 260px;
+    background-color: #c0c2c0;
+    text-decoration: none;
+    color: #000;
+}
+
+.mudrA .name {
+    font-size: 1.6em;
+    line-height: 3.0em;
+}
+
+.mudrA .title {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+.mudrB {
+    display: block;
+    padding: 30px 0 50px;
+    text-align: center;
+    max-width: 260px;
+    background-color: #659bbb;
+    text-decoration: none;
+    color: #000;
+}
+
+.mudrB .name {
+    font-size: 1.6em;
+    line-height: 3.0em;
+}
+
+.mudrB .title {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+.mudrC {
+    display: block;
+    padding: 30px 0 50px;
+    text-align: center;
+    max-width: 260px;
+    background-color: #676668;
+    text-decoration: none;
+    color: #000;
+}
+
+.mudrC .name {
+    font-size: 1.6em;
+    line-height: 3.0em;
+}
+
+.mudrC .title {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+.mudrD {
+    display: block;
+    padding: 30px 0 50px;
+    text-align: center;
+    max-width: 260px;
+    background-color: #7ccd6f;
+    text-decoration: none;
+    color: #000;
+}
+
+.mudrD .name {
+    font-size: 1.6em;
+    line-height: 3.0em;
+}
+
+.mudrD .title {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+.teamOver {
+    background-color: #f3f3f3;
+    clear: both;
+    padding: 20px 0 60px 0;
+    border: 0px solid #d9d9d9;
+    border-width: 1px 0px;
+}
+
+.team-in {
+    float: left;
+    width: 19%;
+    background-color: #fff;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+}
+
+.team-in .position {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.map {
+    width: 40%;
+    float: left;
+}
+
+.map iframe {
+    border: 5px solid #fff;
+    box-shadow: #dcdcdc 2px 4px 10px;
+}
+
+.form {
+    width: 56%;
+    float: left;
+}
+
+.form textarea {
+    background-color: #f2f2f2;
+    border: 1px solid #d9d9d9;
+    float: left;
+}
+
+.form .message {
+    width: 500px;
+    height: 210px;
+    padding: 10px;
+}
+
+.form .e-mail {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.form .send {
+    background: none;
+    border: 5px solid #fff;
+    box-shadow: #dcdcdc 2px 4px 6px;
+    padding: 0;
+    float: right;
+    margin: 10px -15px 0 0;
+}
+
+.bottomDiv {
+    background-color: #4f4f4f;
+    margin-top: 60px;
+    padding-top: 30px;
+}
+
+.bottomDiv span, .bottomDiv p {
+    color: #949494;
+    padding: 0 10px;
+}
+
+.address {
+    float: left;
+}
+
+.copyright {
+    float: right;
+}
+
+#weather {
+    text-align: left;
+}
+
+#portfolio {
+    display: block;
+}
+
+#portfolio li {
+    display: block;
+    float: left;
+    width: 30%;
+    max-width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#portfolio li a {
+    display: block;
+    padding: 8px;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#portfolio li img {
+    width: 100%;
+}
+
+
 @media (min-width: 400px) and (max-width: 900px) {
-	.logo {
-		max-width: 200px; margin-left: 20px;
-	}
-	.workDiv, .teamOver-in, .map, .form, .form .message {
-		width: 90%; padding-left: 5%;
-	}
-	.form .send {
-		float: left; clear: both;
-	}
-	.bottomDiv {
-		height: 90px; padding-top: 20px; text-align: center;
-	}
+    .logo {
+        max-width: 200px;
+        margin-left: 20px;
+    }
+
+    .workDiv, .teamOver-in, .map, .form, .form .message {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .form .send {
+        float: left;
+        clear: both;
+    }
+
+    .bottomDiv {
+        padding-top: 20px;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 400px) and (max-width: 700px) {
-	.team-in {
-		width: 40%; padding: 2%; margin: 3%; max-width: 210px;
-	}
+    .team-in {
+        width: 40%;
+        padding: 2%;
+        margin: 3%;
+        max-width: 210px;
+    }
 }
 
 @media (max-width: 400px) {
-	.logo {
-		max-width: 150px; margin-left: 20px;
-	}
-	.menu {
-		float: right; padding: 10px 0 10px;
-	}
-	.slogan {
-		padding-top: 50px;
-	}
-	.centerP {
-		padding: 0 5%; width: 90%;
-	}
-	.work-in, .team-in {
-		width: 100%; text-align: center;
-	}
-	.team-in {
-		width: 40%; padding: 2%; margin: 3%; max-width: 210px;
-	}
-	.map, .form {
-		width: 90%; padding-left: 5%;
-	}
-	.form .message, .form .e-mail {
-		width: 90%; padding-left: 5%;
-	}
-	.form .send {
-		float: left;
-	}
-	.bottomDiv {
-		height: 100%; padding-top: 20px; text-align: center;
-	}
-	.bottomDiv span, .bottomDiv .copyright {
-		display: block; padding: 10px 0px; width: 100%; text-align: center;
-	}
+    .logo {
+        max-width: 150px;
+        margin-left: 20px;
+    }
+
+    .menu {
+        float: right;
+        padding: 10px 0 10px;
+    }
+
+    .slogan {
+        padding-top: 50px;
+    }
+
+    .centerP {
+        padding: 0 5%;
+        width: 90%;
+    }
+
+    .work-in, .team-in {
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-in {
+        width: 40%;
+        padding: 2%;
+        margin: 3%;
+        max-width: 210px;
+    }
+
+    .map, .form {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .form .message, .form .e-mail {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .form .send {
+        float: left;
+    }
+
+    .bottomDiv {
+        height: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .bottomDiv .copyright {
+        display: block;
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #weather {
+        text-align: center;
+    }
 }

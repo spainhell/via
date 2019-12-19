@@ -5,8 +5,6 @@ function getFromYrNo() {
         let xmlDoc;
         let parser;
         if (this.readyState == 4 && this.status == 200) {
-
-            console.log("Response from YR.NO length:", xhttp.responseText.length);
             parser = new DOMParser();
             xmlDoc = parser.parseFromString(xhttp.responseText, "text/xml");
 
@@ -21,16 +19,16 @@ function getFromYrNo() {
             let temperature = time.getElementsByTagName("temperature")[0];
             let pressureTag = time.getElementsByTagName("pressure")[0];
 
-            let oblacnost = cloudy.getAttribute("name");
-            let vitr = windDirection.getAttribute("name") + " " + windSpeed.getAttribute("mps") + " m/s";
-            let teplota = temperature.getAttribute("value") + "°C";
-            let tlak = pressureTag.getAttribute("value") + " " + pressureTag.getAttribute("unit");
-
-            document.getElementById("weather").innerHTML = oblacnost + "<br>" + vitr + "<br>" + teplota + "<br>" + tlak;
+            $("#cloudiness").html(cloudy.getAttribute("name"));
+            $("#wind").html(windDirection.getAttribute("name") + " " + windSpeed.getAttribute("mps") + " m/s");
+            $("#temperature").html(temperature.getAttribute("value") + "°C");
+            $("#pressure").html(pressureTag.getAttribute("value") + " " + pressureTag.getAttribute("unit"));
+            $("#weather").show();
         }
     };
 
     xhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://www.yr.no/place/Czech_Republic/Zl%C3%ADn/Vizovice/forecast.xml", true);
+    xhttp.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
     xhttp.send();
 
 }
